@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:menu="@tools:sample/last_names" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp"
+        style="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+        >
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/shark" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="132dp"
+            android:text="Ocean"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="22sp"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="185dp"
+            android:layout_height="32dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="4dp"
+            android:hint="Usuário">
+
+            <com.google.android.material.textfield.TextInputEditText
+                colo
+                android:layout_width="188dp"
+                android:layout_height="34dp"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="4dp"
+            android:hint="Senha"
+            app:helperTextTextAppearance="@color/cardview_shadow_end_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="191dp"
+                android:layout_height="36dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
